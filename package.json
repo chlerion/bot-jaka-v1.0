@@ -1,0 +1,24 @@
+{
+  "name": "bot-jaka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^17.0.0",
+    "formdata-node": "^6.0.3",
+    "googleapis": "^150.0.1",
+    "moment-timezone": "^0.6.0",
+    "node-cron": "^4.1.1",
+    "node-fetch": "^2.7.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.31.0"
+  }
+}

@@ -1,0 +1,9 @@
+# Folder library Node.js, tidak perlu diunggah
+node_modules
+
+# Folder sesi WhatsApp, berisi data login
+.wwebjs_auth/
+
+# File kredensial rahasia
+credentials.json
+.env
