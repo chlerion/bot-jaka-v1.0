@@ -499,5 +499,16 @@ async function appendToSheet(sheetName, data) {
     });
 }
 
+// Dummy server untuk Render.com agar tidak timeout
+const http = require('http');
+const port = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Bot JAKA is running!');
+}).listen(port, '0.0.0.0', () => {
+  console.log(`Listening on port ${port}`);
+});
+
 // --- Mulai Bot ---
 client.initialize().catch(err => console.log("Gagal Initialize:", err));
